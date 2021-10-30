@@ -34,7 +34,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-vue": "^7.20.0",
     "husky": "^7.0.4",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
@@ -43,6 +43,6 @@
   },
   "license": "MIT",
   "engines": {
-    "node": "^12 || ^14 || ^15 || ^16"
+    "node": "^12 || ^14 || ^15 || ^16 || ^17"
   }
 }
