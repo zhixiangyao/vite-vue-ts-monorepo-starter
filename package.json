@@ -11,7 +11,7 @@
   "scripts": {
     "lint:all": "npm run lint:eslint && npm run lint:prettier && npm run lint:stylelint",
     "lint:eslint": "eslint \"packages/**/{src,mock}/**/*.{js,vue,ts,tsx}\" --fix",
-    "lint:prettier": "prettier --write --loglevel warn \"packages/**/src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:prettier": "prettier --write --loglevel warn \"packages/**/src/**/*.{js,json,ts,tsx,css,less,scss,vue,html,md}\"",
     "lint:stylelint": "stylelint --fix \"packages/**/**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
@@ -20,7 +20,7 @@
     "packages/**/*.{js,vue,ts,tsx}": [
       "npx eslint --fix"
     ],
-    "packages/**/*.{js,json,tsx,css,less,scss,vue,html,md}": [
+    "packages/**/*.{js,json,ts,tsx,css,less,scss,vue,html,md}": [
       "npx prettier --write --loglevel warn "
     ],
     "packages/**/*.{vue,less,postcss,css,scss}": [

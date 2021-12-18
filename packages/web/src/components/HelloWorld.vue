@@ -1,19 +1,28 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="tsx">
+import { defineComponent, ref, renderSlot, onMounted } from 'vue'
 
-export default defineComponent({ name: 'HelloWorld' })
+export default defineComponent({
+  props: { msg: String },
+  setup(props, ctx) {
+    const { slots } = ctx
+    const count = ref(0)
+    const handleClick = () => count.value++
+
+    onMounted(() => {
+      console.log('mounted!')
+    })
+
+    return () => (
+      <div>
+        <h1>{props.msg}</h1>
+
+        <button type="button" onClick={handleClick}>
+          count is: {count.value}
+        </button>
+
+        {renderSlot(slots, 'default')}
+      </div>
+    )
+  },
+})
 </script>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-
-const props = defineProps<{ msg: string }>()
-
-let count = ref(0)
-</script>
-
-<template>
-  <h1>{{ props.msg }}</h1>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-</template>

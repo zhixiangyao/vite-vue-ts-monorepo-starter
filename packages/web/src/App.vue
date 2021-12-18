@@ -1,26 +1,30 @@
-<script lang="ts">
+<script lang="tsx">
 import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'App',
-})
-</script>
-
-<script lang="ts" setup>
 import { add } from 'utils'
 import HelloWorld from './components/HelloWorld.vue'
-</script>
+import img from './assets/logo.png'
 
-<template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <p>{{ add(900, 96) }}</p>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-</template>
+function App() {
+  return () => (
+    <>
+      <img alt="Vue logo" src={img} />
+
+      <p>{add(900, 96)}</p>
+
+      <HelloWorld msg={'Hello Vue 3 + TypeScript + Vite'}>
+        <div>default slot</div>
+      </HelloWorld>
+    </>
+  )
+}
+
+export default defineComponent(App)
+</script>
 
 <style>
 #app {
   margin-top: 60px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
