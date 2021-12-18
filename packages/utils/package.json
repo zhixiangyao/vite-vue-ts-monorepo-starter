@@ -1,5 +1,5 @@
 {
-  "name": "@zhixiangyao/utils",
+  "name": "utils",
   "version": "0.1.0",
   "main": "index.ts",
   "author": "zhixiangyao"

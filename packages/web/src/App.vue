@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <script lang="ts" setup>
-import { add } from '@zhixiangyao/utils'
+import { add } from 'utils'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
