@@ -1,17 +1,24 @@
-# Vite + Vue + TypeScript + Monorepo
+# Vite + Vue 3 + TypeScript + Monorepo
 
 This template will help you start developing in Vite using Vue and PNPM Monorepo.
 
 **Editor:**
 
-- [VS Code](https://code.visualstudio.com/)
+- [VSCode](https://code.visualstudio.com/)
 
-**VSCode Extension:**
+**VSCode extension:**
 
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
-- [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 **Development ENV:**
 
-- NodeJS
+- NodeJs
 - Git
+
+## Clone
+
+```shell
+git clone git@github.com:zhixiangyao/vite-vue-ts-monorepo-starter.git
+cd vite-vue-ts-monorepo-starter
+pnpm i # If not install pnpm, please run: npm install -g pnpm
+```
