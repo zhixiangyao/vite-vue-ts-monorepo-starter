@@ -1,5 +1,9 @@
 dist
 dist-ssr
 public
-.vscode
 node_modules
+.husky
+
+**/*.html
+**/*.js
+**/*.mjs
