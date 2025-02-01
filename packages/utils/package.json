@@ -1,7 +1,7 @@
 {
   "name": "utils",
-  "version": "0.1.0",
-  "main": "index.ts",
   "type": "module",
-  "author": "zhixiangyao"
+  "version": "0.1.0",
+  "author": "zhixiangyao",
+  "main": "index.ts"
 }

@@ -1,33 +1,26 @@
 {
   "name": "vite-vue-ts-monorepo-starter",
-  "version": "0.1.0",
   "type": "module",
+  "version": "0.1.0",
   "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
   "license": "MIT",
+  "homepage": "https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter.git"
   },
-  "homepage": "https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
   "scripts": {
     "dev": "cd ./packages/web && npm run dev",
     "build": "cd ./packages/web && npm run build",
     "serve": "cd ./packages/web && npm run serve",
-    "lint": "eslint --fix \"./**/*.{vue,ts,tsx}\" --cache --cache-location node_modules/.cache/eslint/",
-    "lint:stylelint": "stylelint --fix \"./**/*.{vue,postcss,css}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint": "eslint --cache --cache-location node_modules/.cache/eslint/",
+    "lint:stylelint": "stylelint \"./**/*.{vue,postcss,css}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint-staged": "lint-staged",
     "postinstall": "simple-git-hooks"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": [
-      "eslint --cache --cache-location node_modules/.cache/eslint/"
-    ],
-    "./**/*.{vue,postcss,css}": [
-      "stylelint --fix --cache --cache-location node_modules/.cache/stylelint/"
-    ]
   },
   "devDependencies": {
     "@antfu/eslint-config": "4.1.0",
@@ -42,8 +35,15 @@
     "stylelint-order": "6.0.4",
     "typescript": "5.7.3"
   },
-  "engines": {
-    "node": ">=22",
-    "pnpm": ">=9"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --cache --cache-location node_modules/.cache/eslint/"
+    ],
+    "./**/*.{vue,postcss,css}": [
+      "stylelint --cache --cache-location node_modules/.cache/stylelint/"
+    ]
   }
 }

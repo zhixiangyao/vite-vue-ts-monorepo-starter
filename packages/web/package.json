@@ -1,9 +1,9 @@
 {
   "name": "web",
-  "version": "0.1.0",
   "type": "module",
-  "main": "index.tsx",
+  "version": "0.1.0",
   "author": "zhixiangyao",
+  "main": "index.tsx",
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
