@@ -1,8 +1,8 @@
 <script lang="tsx">
-import { defineComponent } from 'vue'
 import { add } from 'utils'
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from 'vue'
 import img from './assets/logo.png'
+import HelloWorld from './components/HelloWorld.vue'
 
 function App() {
   return () => (
@@ -11,7 +11,7 @@ function App() {
 
       <p>{add(900, 96)}</p>
 
-      <HelloWorld msg={'Hello Vue 3 + TypeScript + Vite'}>
+      <HelloWorld msg="Hello Vue 3 + TypeScript + Vite">
         <div>default slot</div>
       </HelloWorld>
     </>

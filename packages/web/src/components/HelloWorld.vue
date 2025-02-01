@@ -1,5 +1,5 @@
 <script lang="tsx">
-import { defineComponent, ref, renderSlot, onMounted } from 'vue'
+import { defineComponent, onMounted, ref, renderSlot } from 'vue'
 
 export default defineComponent({
   props: { msg: String },
@@ -17,7 +17,9 @@ export default defineComponent({
         <h1>{props.msg}</h1>
 
         <button type="button" onClick={handleClick}>
-          count is: {count.value}
+          count is:
+          {' '}
+          {count.value}
         </button>
 
         {renderSlot(slots, 'default')}
