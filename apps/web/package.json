@@ -9,15 +9,16 @@
   },
   "dependencies": {
     "utils": "link:packages/utils",
-    "vue": "3.5.13"
+    "vue": "3.5.14"
   },
   "devDependencies": {
-    "@types/node": "22.13.0",
-    "@vitejs/plugin-vue": "5.2.1",
-    "@vitejs/plugin-vue-jsx": "4.1.1",
-    "@vue/compiler-sfc": "3.5.13",
+    "@types/node": "22.15.21",
+    "@vitejs/plugin-vue": "5.2.4",
+    "@vitejs/plugin-vue-jsx": "4.2.0",
+    "@vue/compiler-sfc": "3.5.14",
+    "@vue/tsconfig": "0.7.0",
     "typescript": "5.8.3",
-    "vite": "6.0.11",
-    "vue-tsc": "2.2.0"
+    "vite": "6.3.5",
+    "vue-tsc": "2.2.10"
   }
 }
