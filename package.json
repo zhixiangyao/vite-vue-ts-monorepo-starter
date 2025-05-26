@@ -16,11 +16,13 @@
   "scripts": {
     "postinstall": "simple-git-hooks",
     "------------- DEV -------------": "",
-    "dev": "concurrently \"pnpm dev:utils\" \"pnpm dev:web\"",
+    "dev": "concurrently \"pnpm dev:components\" \"pnpm dev:utils\" \"pnpm dev:web\"",
+    "dev:components": "pnpm --filter components dev",
     "dev:utils": "pnpm --filter utils dev",
     "dev:web": "pnpm --filter web dev",
     "------------- BUILD -------------": "",
-    "build": "pnpm build:utils && pnpm build:web",
+    "build": "concurrently \"pnpm build:components\" \"pnpm build:utils\" && pnpm build:web",
+    "build:components": "pnpm --filter components build",
     "build:utils": "pnpm --filter utils build",
     "build:web": "pnpm --filter web build",
     "------------- LINT -------------": "",
@@ -29,6 +31,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "components": "link:packages/components",
     "utils": "link:packages/utils"
   },
   "devDependencies": {
@@ -56,5 +59,4 @@
       "stylelint --cache --cache-location node_modules/.cache/stylelint/"
     ]
   }
-
 }

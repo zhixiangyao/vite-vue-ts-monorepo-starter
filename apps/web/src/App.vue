@@ -1,8 +1,8 @@
 <script lang="tsx">
+import { HelloWorld } from 'components'
 import { formatTime } from 'utils'
 import { defineComponent } from 'vue'
 import img from './assets/logo.png'
-import HelloWorld from './components/HelloWorld.vue'
 
 function App() {
   return () => (

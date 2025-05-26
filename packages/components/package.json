@@ -1,15 +1,15 @@
 {
-  "name": "web",
+  "name": "components",
   "type": "module",
   "version": "0.1.0",
   "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
+  "main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch",
     "build": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
-    "components": "link:packages/components",
-    "utils": "link:packages/utils",
     "vue": "3.5.14"
   },
   "devDependencies": {
@@ -20,6 +20,7 @@
     "@vue/tsconfig": "0.7.0",
     "typescript": "5.8.3",
     "vite": "6.3.5",
+    "vite-plugin-dts": "4.5.4",
     "vue-tsc": "2.2.10"
   }
 }

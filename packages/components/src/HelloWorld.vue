@@ -14,7 +14,9 @@ export default defineComponent({
 
     return () => (
       <div>
-        <h1>{props.msg}</h1>
+        <h1>
+          {props.msg}
+        </h1>
 
         <button type="button" onClick={handleClick}>
           count is:
