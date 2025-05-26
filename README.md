@@ -1,6 +1,8 @@
 # Vite + Vue 3 + TypeScript + Monorepo
 
-This template will help you start developing in Vite using Vue and PNPM Monorepo.
+> This is a monorepo project based on pnpm.
+
+## Preparatory Work
 
 **Editor:**
 
@@ -43,5 +45,5 @@ pnpm build
 
 ```shell
 pnpm lint
-pnpm lint:stylelint
+pnpm lint:css
 ```

@@ -11,29 +11,39 @@
   },
   "engines": {
     "node": ">=22",
-    "pnpm": ">=9"
+    "pnpm": ">=10"
   },
   "scripts": {
-    "dev": "cd ./packages/web && npm run dev",
-    "build": "cd ./packages/web && npm run build",
-    "serve": "cd ./packages/web && npm run serve",
+    "postinstall": "simple-git-hooks",
+    "------------- DEV -------------": "",
+    "dev": "concurrently \"pnpm dev:utils\" \"pnpm dev:web\"",
+    "dev:utils": "pnpm --filter utils dev",
+    "dev:web": "pnpm --filter web dev",
+    "------------- BUILD -------------": "",
+    "build": "pnpm build:utils && pnpm build:web",
+    "build:utils": "pnpm --filter utils build",
+    "build:web": "pnpm --filter web build",
+    "------------- LINT -------------": "",
     "lint": "eslint --cache --cache-location node_modules/.cache/eslint/",
-    "lint:stylelint": "stylelint \"./**/*.{vue,postcss,css}\" --cache --cache-location node_modules/.cache/stylelint/",
-    "lint-staged": "lint-staged",
-    "postinstall": "simple-git-hooks"
+    "lint:css": "stylelint \"./**/*.{vue,css}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "utils": "link:packages/utils"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.1.0",
-    "@typescript-eslint/eslint-plugin": "8.22.0",
-    "eslint": "9.19.0",
-    "lint-staged": "15.4.3",
+    "@antfu/eslint-config": "4.13.2",
+    "@typescript-eslint/eslint-plugin": "8.32.1",
+    "concurrently": "9.1.2",
+    "eslint": "9.27.0",
+    "lint-staged": "16.0.0",
     "postcss-html": "1.8.0",
-    "simple-git-hooks": "2.11.1",
-    "stylelint": "16.14.1",
+    "simple-git-hooks": "2.13.0",
+    "stylelint": "16.19.1",
     "stylelint-config-recommended-vue": "1.6.0",
     "stylelint-config-standard": "37.0.0",
-    "stylelint-order": "6.0.4",
-    "typescript": "5.7.3"
+    "stylelint-order": "7.0.0",
+    "typescript": "5.8.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
@@ -42,8 +52,9 @@
     "*": [
       "eslint --cache --cache-location node_modules/.cache/eslint/"
     ],
-    "./**/*.{vue,postcss,css}": [
+    "./**/*.{vue,css}": [
       "stylelint --cache --cache-location node_modules/.cache/stylelint/"
     ]
   }
+
 }

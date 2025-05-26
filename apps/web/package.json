@@ -2,14 +2,13 @@
   "name": "web",
   "type": "module",
   "version": "0.1.0",
-  "author": "zhixiangyao",
-  "main": "index.tsx",
+  "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
+    "utils": "link:packages/utils",
     "vue": "3.5.13"
   },
   "devDependencies": {
@@ -17,8 +16,7 @@
     "@vitejs/plugin-vue": "5.2.1",
     "@vitejs/plugin-vue-jsx": "4.1.1",
     "@vue/compiler-sfc": "3.5.13",
-    "typescript": "5.7.3",
-    "utils": "workspace:*",
+    "typescript": "5.8.3",
     "vite": "6.0.11",
     "vue-tsc": "2.2.0"
   }

@@ -1,5 +1,5 @@
 <script lang="tsx">
-import { add } from 'utils'
+import { formatTime } from 'utils'
 import { defineComponent } from 'vue'
 import img from './assets/logo.png'
 import HelloWorld from './components/HelloWorld.vue'
@@ -9,7 +9,7 @@ function App() {
     <>
       <img alt="Vue logo" src={img} />
 
-      <p>{add(900, 96)}</p>
+      <p>{formatTime(new Date())}</p>
 
       <HelloWorld msg="Hello Vue 3 + TypeScript + Vite">
         <div>default slot</div>

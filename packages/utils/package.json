@@ -2,6 +2,19 @@
   "name": "utils",
   "type": "module",
   "version": "0.1.0",
-  "author": "zhixiangyao",
-  "main": "index.ts"
+  "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "dayjs": "1.11.13"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "12.1.2",
+    "rollup": "4.41.1",
+    "typescript": "5.8.3"
+  }
 }
