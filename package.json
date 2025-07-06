@@ -16,12 +16,12 @@
   "scripts": {
     "postinstall": "simple-git-hooks",
     "------------- DEV -------------": "",
-    "dev": "concurrently \"pnpm dev:components\" \"pnpm dev:utils\" \"pnpm dev:web\"",
+    "dev": "concurrently -c green,blue,red \"pnpm dev:components\" \"pnpm dev:utils\" \"sleep 1 && pnpm dev:web\"",
     "dev:components": "pnpm --filter components dev",
     "dev:utils": "pnpm --filter utils dev",
     "dev:web": "pnpm --filter web dev",
     "------------- BUILD -------------": "",
-    "build": "concurrently \"pnpm build:components\" \"pnpm build:utils\" && pnpm build:web",
+    "build": "concurrently -c green,blue \"pnpm build:components\" \"pnpm build:utils\" && pnpm build:web",
     "build:components": "pnpm --filter components build",
     "build:utils": "pnpm --filter utils build",
     "build:web": "pnpm --filter web build",
@@ -29,10 +29,6 @@
     "lint": "eslint --cache --cache-location node_modules/.cache/eslint/",
     "lint:css": "stylelint \"./**/*.{vue,css}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint-staged": "lint-staged"
-  },
-  "dependencies": {
-    "components": "link:packages/components",
-    "utils": "link:packages/utils"
   },
   "devDependencies": {
     "@antfu/eslint-config": "4.13.2",

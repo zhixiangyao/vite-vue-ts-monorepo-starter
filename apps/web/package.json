@@ -8,8 +8,8 @@
     "build": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
-    "components": "link:packages/components",
-    "utils": "link:packages/utils",
+    "components": "workspace:*",
+    "utils": "workspace:*",
     "vue": "3.5.14"
   },
   "devDependencies": {
