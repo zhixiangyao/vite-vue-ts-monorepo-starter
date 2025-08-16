@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "12.1.4",
-    "rollup": "4.44.2",
-    "typescript": "5.8.3"
+    "@types/node": "22.17.2",
+    "rollup": "4.46.2",
+    "typescript": "5.9.2"
   }
 }
