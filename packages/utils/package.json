@@ -10,12 +10,12 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "dayjs": "1.11.13"
+    "dayjs": "1.11.19"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "12.1.4",
-    "@types/node": "22.17.2",
-    "rollup": "4.46.2",
-    "typescript": "5.9.2"
+    "@rollup/plugin-typescript": "12.3.0",
+    "@types/node": "24.10.0",
+    "rollup": "4.53.2",
+    "typescript": "5.9.3"
   }
 }
