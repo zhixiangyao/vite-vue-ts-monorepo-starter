@@ -4,19 +4,20 @@
 
 ## Preparatory Work
 
-**Editor:**
+- **Editor:**
 
-- [VSCode](https://code.visualstudio.com/)
+  - [VSCode](https://code.visualstudio.com/)
 
-**VSCode extension:**
+- **VSCode extension:**
 
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+  - Vue
+  - ESLint
 
-**Development ENV:**
+- **Development ENV:**
 
-- git => 2.39.0
-- node => 24.11.0
-- pnpm => 10.21.0
+  - git => 2.39.0
+  - node => 24.11.0
+  - pnpm => 10.21.0
 
 ## Clone
 
