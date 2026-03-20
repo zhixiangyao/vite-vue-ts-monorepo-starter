@@ -16,8 +16,8 @@
 - **Development ENV:**
 
   - git => 2.39.0
-  - node => 24.11.0
-  - pnpm => 10.21.0
+  - node => 24.14.0
+  - pnpm => 10.32.1
 
 ## Clone
 

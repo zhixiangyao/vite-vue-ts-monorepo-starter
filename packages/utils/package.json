@@ -10,12 +10,12 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "dayjs": "1.11.19"
+    "dayjs": "catalog:"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "12.3.0",
-    "@types/node": "24.10.0",
-    "rollup": "4.53.2",
-    "typescript": "5.9.3"
+    "@rollup/plugin-typescript": "catalog:",
+    "@types/node": "catalog:",
+    "rollup": "catalog:",
+    "typescript": "catalog:"
   }
 }

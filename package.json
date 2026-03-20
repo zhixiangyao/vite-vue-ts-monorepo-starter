@@ -10,8 +10,8 @@
     "url": "git+https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter.git"
   },
   "engines": {
-    "node": ">=24.11.0",
-    "pnpm": ">=10.21.0"
+    "node": ">=24.14.0",
+    "pnpm": ">=10.32.1"
   },
   "scripts": {
     "postinstall": "simple-git-hooks",
@@ -31,19 +31,20 @@
     "lint-staged": "lint-staged"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "6.2.0",
-    "@types/node": "24.10.0",
-    "@typescript-eslint/eslint-plugin": "8.46.4",
-    "concurrently": "9.2.1",
-    "eslint": "9.39.1",
-    "lint-staged": "16.2.6",
-    "postcss-html": "1.8.0",
-    "simple-git-hooks": "2.13.1",
-    "stylelint": "16.25.0",
-    "stylelint-config-recommended-vue": "1.6.1",
-    "stylelint-config-standard": "39.0.1",
-    "stylelint-order": "7.0.0",
-    "typescript": "5.9.3"
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "concurrently": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "postcss-html": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "stylelint": "catalog:",
+    "stylelint-config-recess-order": "catalog:",
+    "stylelint-config-recommended-vue": "catalog:",
+    "stylelint-config-standard": "catalog:",
+    "stylelint-order": "catalog:",
+    "typescript": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
