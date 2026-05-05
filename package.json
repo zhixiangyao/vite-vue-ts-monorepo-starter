@@ -9,34 +9,30 @@
     "type": "git",
     "url": "git+https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter.git"
   },
+  "packageManager": "pnpm@11.0.3",
   "engines": {
-    "node": ">=24.14.0",
-    "pnpm": ">=10.32.1"
+    "node": ">=25.9.0",
+    "pnpm": ">=11.0.3"
   },
   "scripts": {
     "postinstall": "simple-git-hooks",
-    "------------- DEV -------------": "",
-    "dev": "concurrently -c green,blue,red \"pnpm dev:components\" \"pnpm dev:utils\" \"sleep 1 && pnpm dev:web\"",
-    "dev:components": "pnpm --filter components dev",
-    "dev:utils": "pnpm --filter utils dev",
-    "dev:web": "pnpm --filter web dev",
-    "------------- BUILD -------------": "",
-    "build": "concurrently -c green,blue \"pnpm build:components\" \"pnpm build:utils\" && pnpm build:web",
-    "build:components": "pnpm --filter components build",
-    "build:utils": "pnpm --filter utils build",
-    "build:web": "pnpm --filter web build",
+    "------------- TURBO -------------": "",
+    "dev": "turbo run dev",
+    "typecheck": "turbo run typecheck",
+    "build": "turbo run build",
     "------------- LINT -------------": "",
-    "lint": "eslint --cache --cache-location node_modules/.cache/eslint/",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint --fix",
+    "lint:check": "oxlint",
     "lint:css": "stylelint \"./**/*.{vue,css}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint-staged": "lint-staged"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:",
     "@types/node": "catalog:",
-    "@typescript-eslint/eslint-plugin": "catalog:",
-    "concurrently": "catalog:",
-    "eslint": "catalog:",
     "lint-staged": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
     "postcss-html": "catalog:",
     "simple-git-hooks": "catalog:",
     "stylelint": "catalog:",
@@ -44,16 +40,20 @@
     "stylelint-config-recommended-vue": "catalog:",
     "stylelint-config-standard": "catalog:",
     "stylelint-order": "catalog:",
+    "turbo": "catalog:",
     "typescript": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": [
-      "eslint --cache --cache-location node_modules/.cache/eslint/"
+    "**/*.{js,cjs,mjs,jsx,ts,mts,tsx,vue}": [
+      "pnpm lint:check"
     ],
-    "./**/*.{vue,css}": [
+    "**/*.{js,cjs,mjs,jsx,ts,mts,tsx,vue,html,md,json,css,yaml,yml}": [
+      "pnpm fmt:check"
+    ],
+    "**/*.{vue,css}": [
       "stylelint --cache --cache-location node_modules/.cache/stylelint/"
     ]
   }

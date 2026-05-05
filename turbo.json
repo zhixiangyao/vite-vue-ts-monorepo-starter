@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md", "!**/README.md"]
+    },
+    "build": {
+      "dependsOn": ["typecheck", "^build"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md", "!**/README.md"],
+      "outputs": ["dist/**"]
+    }
+  }
+}

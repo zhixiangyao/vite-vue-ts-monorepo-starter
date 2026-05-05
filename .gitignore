@@ -5,8 +5,11 @@ dist-ssr
 *.local
 .npmrc
 .cache
+.turbo
 package-lock.json
 pnpm-lock.yaml
+auto-imports.d.ts
+components.d.ts
 
 test/upload-server/static
 

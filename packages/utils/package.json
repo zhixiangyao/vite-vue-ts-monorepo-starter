@@ -3,19 +3,20 @@
   "type": "module",
   "version": "0.1.0",
   "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
-  "main": "dist/index.js",
+  "main": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build"
   },
   "dependencies": {
     "dayjs": "catalog:"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "catalog:",
     "@types/node": "catalog:",
-    "rollup": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:"
   }
 }

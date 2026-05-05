@@ -1,24 +1,22 @@
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
-  plugins: [vue(), vueJsx({ optimize: true, enableObjectSlots: true }), dts({ tsconfigPath: './tsconfig.app.json' })],
+  plugins: [dts({ tsconfigPath: './tsconfig.json' })],
   build: {
     target: 'esnext',
     reportCompressedSize: false,
     lib: {
       entry: 'src/index.ts',
-      name: 'Components',
+      name: 'Utils',
       formats: ['es'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['dayjs'],
       output: {
         globals: {
-          vue: 'Vue',
+          dayjs: 'dayjs',
         },
       },
     },

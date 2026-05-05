@@ -1,36 +1,32 @@
-catalogMode: prefer
-
-cleanupUnusedCatalogs: true
-
-shellEmulator: true
-
-trustPolicy: no-downgrade
 packages:
   - 'packages/**'
   - 'apps/**'
+allowBuilds:
+  simple-git-hooks: false
 catalog:
-  '@antfu/eslint-config': 7.7.3
-  '@rollup/plugin-typescript': 12.3.0
-  '@types/node': 24.12.0
-  '@typescript-eslint/eslint-plugin': 8.57.1
-  '@vitejs/plugin-vue': 6.0.5
+  '@types/node': 25.6.0
+  '@vitejs/plugin-vue': 6.0.6
   '@vitejs/plugin-vue-jsx': 5.1.5
-  '@vue/compiler-sfc': 3.5.30
-  '@vue/tsconfig': 0.9.0
-  concurrently: 9.2.1
+  '@vue/compiler-sfc': 3.5.33
+  '@vue/tsconfig': 0.9.1
   dayjs: 1.11.20
-  eslint: 9.39.4
   lint-staged: 16.4.0
+  oxfmt: 0.47.0
+  oxlint: 1.62.0
   postcss-html: 1.8.1
-  rollup: 4.59.0
   simple-git-hooks: 2.13.1
-  stylelint: 17.5.0
+  stylelint: 17.9.1
   stylelint-config-recess-order: 7.7.0
   stylelint-config-recommended-vue: 1.6.1
   stylelint-config-standard: 40.0.0
   stylelint-order: 8.1.1
-  typescript: 5.9.3
-  vite: 8.0.1
+  turbo: 2.5.8
+  typescript: 6.0.3
+  vite: 8.0.10
   vite-plugin-dts: 4.5.4
-  vue: 3.5.30
-  vue-tsc: 3.2.6
+  vue: 3.5.33
+  vue-tsc: 3.2.7
+catalogMode: prefer
+cleanupUnusedCatalogs: true
+shellEmulator: true
+trustPolicy: no-downgrade

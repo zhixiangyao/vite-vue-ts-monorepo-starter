@@ -1,47 +1,47 @@
 # Vite + Vue 3 + TypeScript + Monorepo
 
-English · [中文](./README-zh.md)
+[English](./README.md) · 中文
 
-> This is a monorepo project based on pnpm and Turborepo, with shared packages for components and utilities.
+> 这是一个基于 pnpm 和 Turborepo 的 monorepo 项目，包含共享的组件包和工具包。
 
-- **Editor:**
+- **编辑器：**
   - [VSCode](https://code.visualstudio.com/)
 
-- **VSCode extension:**
+- **VSCode 扩展：**
   - [Vue](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
   - [Oxc](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode)
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-- **Development ENV:**
+- **开发环境：**
   - git => 2.39.0
   - node => 25.9.0
   - pnpm => 11.0.3
 
-## Clone
+## 克隆项目
 
 ```shell
 git clone git@github.com:zhixiangyao/vite-vue-ts-monorepo-starter.git
 cd vite-vue-ts-monorepo-starter
-pnpm i # If not install pnpm, please run: npm install -g pnpm
+pnpm i # 如果还没有安装 pnpm，请先执行：npm install -g pnpm
 ```
 
-## Usage
+## 使用
 
-### Development
+### 开发
 
-click it http://localhost:5173
+点击 http://localhost:5173
 
 ```shell
 pnpm dev
 ```
 
-### Build
+### 构建
 
 ```shell
 pnpm build
 ```
 
-### Check
+### 检查
 
 ```shell
 pnpm typecheck
