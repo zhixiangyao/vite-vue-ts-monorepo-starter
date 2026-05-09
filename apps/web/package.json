@@ -5,7 +5,7 @@
   "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
   "scripts": {
     "dev": "vite",
-    "typecheck": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
     "build": "vite build"
   },
   "dependencies": {

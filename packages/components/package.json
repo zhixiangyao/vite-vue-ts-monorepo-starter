@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite build --watch",
-    "typecheck": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
     "build": "vite build"
   },
   "dependencies": {
