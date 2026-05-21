@@ -4,7 +4,7 @@ packages:
 allowBuilds:
   simple-git-hooks: false
 catalog:
-  '@types/node': 25.6.0
+  '@types/node': 25.9.1
   '@vitejs/plugin-vue': 6.0.6
   '@vitejs/plugin-vue-jsx': 5.1.5
   '@vue/compiler-sfc': 3.5.33

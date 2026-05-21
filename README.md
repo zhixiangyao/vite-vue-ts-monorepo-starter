@@ -14,8 +14,8 @@ English · [中文](./README-zh.md)
 
 - **Development ENV:**
   - git => 2.39.0
-  - node => 26.1.0
-  - pnpm => 11.1.1
+  - node => 26.2.0
+  - pnpm => 11.1.3
 
 ## Clone
 
