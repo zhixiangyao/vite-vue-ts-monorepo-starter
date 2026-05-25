@@ -14,6 +14,10 @@
       "dependsOn": ["typecheck", "^build"],
       "inputs": ["$TURBO_DEFAULT$", "!README.md", "!**/README.md"],
       "outputs": ["dist/**"]
+    },
+    "web#build": {
+      "dependsOn": ["^build", "components#build", "utils#build"],
+      "outputs": ["dist/**"]
     }
   }
 }
