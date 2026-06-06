@@ -7,12 +7,12 @@ catalog:
   '@types/node': 25.9.1
   '@vitejs/plugin-vue': 6.0.7
   '@vitejs/plugin-vue-jsx': 5.1.5
-  '@vue/compiler-sfc': 3.5.34
+  '@vue/compiler-sfc': 3.5.35
   '@vue/tsconfig': 0.9.1
-  dayjs: 1.11.20
-  lint-staged: 17.0.5
-  oxfmt: 0.51.0
-  oxlint: 1.66.0
+  dayjs: 1.11.21
+  lint-staged: 17.0.7
+  oxfmt: 0.53.0
+  oxlint: 1.68.0
   postcss-html: 1.8.1
   simple-git-hooks: 2.13.1
   stylelint: 17.12.0
@@ -20,12 +20,12 @@ catalog:
   stylelint-config-recommended-vue: 1.6.1
   stylelint-config-standard: 40.0.0
   stylelint-order: 8.1.1
-  turbo: 2.9.14
+  turbo: 2.9.16
   typescript: 6.0.3
-  vite: 8.0.14
-  vite-plugin-dts: 5.0.1
-  vue: 3.5.34
-  vue-tsc: 3.3.1
+  vite: 8.0.16
+  vite-plugin-dts: 5.0.2
+  vue: 3.5.35
+  vue-tsc: 3.3.3
 catalogMode: prefer
 cleanupUnusedCatalogs: true
 shellEmulator: true
