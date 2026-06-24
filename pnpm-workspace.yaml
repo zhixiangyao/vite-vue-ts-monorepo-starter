@@ -4,28 +4,28 @@ packages:
 allowBuilds:
   simple-git-hooks: false
 catalog:
-  '@types/node': 25.9.1
+  '@types/node': 26.0.0
   '@vitejs/plugin-vue': 6.0.7
-  '@vitejs/plugin-vue-jsx': 5.1.5
-  '@vue/compiler-sfc': 3.5.35
+  '@vitejs/plugin-vue-jsx': 5.1.6
+  '@vue/compiler-sfc': 3.5.38
   '@vue/tsconfig': 0.9.1
   dayjs: 1.11.21
-  lint-staged: 17.0.7
-  oxfmt: 0.53.0
-  oxlint: 1.68.0
+  lint-staged: 17.0.8
+  oxfmt: 0.56.0
+  oxlint: 1.71.0
   postcss-html: 1.8.1
   simple-git-hooks: 2.13.1
-  stylelint: 17.12.0
+  stylelint: 17.13.0
   stylelint-config-recess-order: 7.7.0
   stylelint-config-recommended-vue: 1.6.1
   stylelint-config-standard: 40.0.0
   stylelint-order: 8.1.1
-  turbo: 2.9.16
+  turbo: 2.9.18
   typescript: 6.0.3
   vite: 8.0.16
   vite-plugin-dts: 5.0.2
-  vue: 3.5.35
-  vue-tsc: 3.3.3
+  vue: 3.5.38
+  vue-tsc: 3.3.5
 catalogMode: prefer
 cleanupUnusedCatalogs: true
 shellEmulator: true

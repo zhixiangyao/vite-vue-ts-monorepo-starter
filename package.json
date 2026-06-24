@@ -9,10 +9,10 @@
     "type": "git",
     "url": "git+https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter.git"
   },
-  "packageManager": "pnpm@11.5.2",
+  "packageManager": "pnpm@11.8.0",
   "engines": {
-    "node": ">=26.2.0",
-    "pnpm": ">=11.5.2"
+    "node": ">=26.3.1",
+    "pnpm": ">=11.8.0"
   },
   "scripts": {
     "postinstall": "simple-git-hooks",
