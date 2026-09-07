@@ -29,4 +29,3 @@ catalog:
 catalogMode: prefer
 cleanupUnusedCatalogs: true
 shellEmulator: true
-trustPolicy: high-risk-only
