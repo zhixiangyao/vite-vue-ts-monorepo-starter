@@ -15,4 +15,7 @@ export default defineConfig({
       enableObjectSlots: true,
     }),
   ],
+  server: {
+    allowedHosts: true,
+  },
 })

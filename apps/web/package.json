@@ -5,6 +5,7 @@
   "author": "zhixiangyao <blueskyzx@icloud.com> <https://github.com/zhixiangyao>",
   "scripts": {
     "dev": "vite",
+    "dev:code-server": "vite --host --base=/absproxy/5173/",
     "typecheck": "vue-tsc --noEmit -p tsconfig.app.json",
     "build": "vite build"
   },

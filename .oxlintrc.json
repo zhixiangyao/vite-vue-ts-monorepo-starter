@@ -10,5 +10,5 @@
     "no-console": "off",
     "no-alert": "off"
   },
-  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "pnpm-lock.yaml"]
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/.turbo/**", "pnpm-lock.yaml"]
 }

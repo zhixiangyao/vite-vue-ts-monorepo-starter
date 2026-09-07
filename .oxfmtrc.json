@@ -13,5 +13,5 @@
   "endOfLine": "lf",
   "insertFinalNewline": true,
   "sortPackageJson": false,
-  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "pnpm-lock.yaml"]
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/.turbo/**", "pnpm-lock.yaml"]
 }

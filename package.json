@@ -9,15 +9,16 @@
     "type": "git",
     "url": "git+https://github.com/zhixiangyao/vite-vue-ts-monorepo-starter.git"
   },
-  "packageManager": "pnpm@11.13.0",
+  "packageManager": "pnpm@12.3.4",
   "engines": {
-    "node": ">=26.5.0",
-    "pnpm": ">=11.13.0"
+    "node": "^22.19.0 || >=24.0.0",
+    "pnpm": ">=12.3.4"
   },
   "scripts": {
     "postinstall": "simple-git-hooks",
     "------------- TURBO -------------": "",
     "dev": "turbo run dev",
+    "dev:code-server": "turbo run dev:code-server",
     "typecheck": "turbo run typecheck",
     "build": "turbo run build",
     "------------- LINT -------------": "",
@@ -44,7 +45,7 @@
     "typescript": "catalog:"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "pnpm lint-staged && pnpm typecheck"
   },
   "lint-staged": {
     "**/*.{js,cjs,mjs,jsx,ts,mts,tsx,vue}": [

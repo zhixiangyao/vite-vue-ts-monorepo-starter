@@ -13,9 +13,8 @@ English · [中文](./README-zh.md)
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 - **Development ENV:**
-  - git => 2.39.0
-  - node => 26.5.0
-  - pnpm => 11.13.0
+  - node >= 22.19.0 (or >= 24)
+  - pnpm => 12.3.4
 
 ## Clone
 
@@ -33,6 +32,22 @@ click it http://localhost:5173
 
 ```shell
 pnpm dev
+```
+
+### Development in code-server
+
+When running inside [code-server](https://github.com/coder/code-server), use this
+instead to serve the dev server through code-server's path proxy:
+
+```shell
+pnpm dev:code-server
+```
+
+It passes `--host --base=/absproxy/5173/` to Vite, so you can open the app in the
+code-server workspace at:
+
+```
+http://localhost:5173/absproxy/5173/
 ```
 
 ### Build

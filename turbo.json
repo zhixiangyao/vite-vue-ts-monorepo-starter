@@ -6,6 +6,11 @@
       "persistent": true,
       "dependsOn": ["^build"]
     },
+    "dev:code-server": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
     "typecheck": {
       "dependsOn": ["^typecheck"],
       "inputs": ["$TURBO_DEFAULT$", "!README.md", "!**/README.md"]
