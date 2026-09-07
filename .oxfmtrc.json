@@ -5,6 +5,7 @@
   "printWidth": 120,
   "tabWidth": 2,
   "useTabs": false,
+  "sortImports": true,
   "trailingComma": "all",
   "arrowParens": "always",
   "quoteProps": "as-needed",
@@ -12,13 +13,5 @@
   "endOfLine": "lf",
   "insertFinalNewline": true,
   "sortPackageJson": false,
-  "ignorePatterns": [
-    "**/node_modules/**",
-    "**/dist/**",
-    "**/build/**",
-    "**/.cache/**",
-    "**/coverage/**",
-    "**/*.tsbuildinfo",
-    "pnpm-lock.yaml"
-  ]
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "pnpm-lock.yaml"]
 }
